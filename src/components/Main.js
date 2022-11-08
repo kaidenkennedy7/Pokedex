@@ -9,12 +9,12 @@ const Main = () => {
   const [start, setStart] = useState(true);
 
   useEffect(() => {
-    const promesa = new Promise((res, rej) => {
+    const promise = new Promise((res, rej) => {
       setTimeout(() => {
         res(Main);
       }, 2500);
     });
-    promesa
+    promise
       .catch((rej) => {
         toast.error("An error has occurred");
       })

@@ -11,7 +11,7 @@ function App() {
   var music = {
     overworld: new Howl({
       src: mainTheme,
-      loop: true,
+      loop: false,
     }),
   };
 

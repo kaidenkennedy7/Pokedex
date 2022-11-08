@@ -18,12 +18,12 @@ const Pagination = ({
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const promesa = new Promise((res, rej) => {
+    const promise = new Promise((res, rej) => {
       setTimeout(() => {
         res(Pagination);
       }, 1500);
     });
-    promesa
+    promise
       .catch((rej) => {
         toast.error("There was an error in loading the Pagination");
       })
